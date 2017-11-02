@@ -1,0 +1,38 @@
+.page-header__wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  padding-top: 76px;
+  padding-bottom: 74px;
+  background-image: url("../img/sedona-background@1200.jpg");
+  background-position: 0 -56px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-header__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/white@1200.png");
+}
+
+.page-header__description {
+  .null-indents();
+}
+
+.page-header__description--welcome {
+  margin-bottom: 4px;
+}
+
+.page-header__description--gorgeous {
+  margin-bottom: 47px;
+}
+
+.page-header__description--sedona {
+  margin-bottom: 50px;
+}
