@@ -1,3 +1,7 @@
+html {
+  background-color: rgb(242, 242, 242);
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -6,4 +10,26 @@ body {
   font-weight: 400;
   font-size: 20px;
   font-family: @font-common;
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden,
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
 }
