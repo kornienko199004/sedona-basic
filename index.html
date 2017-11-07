@@ -93,7 +93,7 @@
         </section>
       </div>
 
-      <div class="features__container">
+      <div class="features__container features__container--gray">
         <section class="features__item features__item--full-screen features__item--reverse">
           <div class="features__wrapper features__wrapper--text">
             <h2 class="features__title">Там есть мост&nbsp;дьявола</h2>
@@ -139,70 +139,73 @@
       <h2 class="contacts__title">Заинтересовались?</h2>
       <p class="contacts__description">
         Укажите предполагаемые даты поездки,
-        и мы покажем вам лучшие предложения гостиниц в седоне
+        и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне
       </p>
       <div class="contacts__wrapper">
         <button class="button contacts__button">
           Поиск гостиницы в Седоне
         </button>
         <form class="contacts__form form">
-          <label class="form__label">
+          <label class="form__label form__label--full-width">
             <span class="form__title">Дата заезда:</span>
             <input class="form__input" placeholder="24 апреля 2017">
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--full-width">
             <span class="form__title">Дата выезда:</span>
             <input class="form__input" placeholder="4 июля 2017">
           </label>
-          <label class="form__label">
-            <span class="form__title">Взрослые:</span>
-            <button class="form__button form__button--add" type="button"><span class="visually-hidden">Добавить</span></button>
-            <input class="form__input" placeholder="2">
-            <button class="form__button form__button--remove" type="button"><span class="visually-hidden">Убрать</span></button>
-          </label>
-          <label class="form__label">
-            <span class="form__title">Дети:</span>
-            <button class="form__button form__button--add" type="button"><span class="visually-hidden">Добавить</span></button>
-            <input class="form__input" placeholder="0">
-            <button class="form__button form__button--remove" type="button"><span class="visually-hidden">Убрать</span></button>
-          </label>
-          <button class="form__button button" type="submit">Найти</button>
+          <div class="form__label form__label--half-width">
+            <label class="form__title" for="adults">Взрослые:</label>
+            <button class="form__button form__button--remove" type="button"><span class="visually-hidden">Добавить</span></button>
+            <input class="form__input" name="adults" id="adults" placeholder="2">
+            <button class="form__button form__button--add" type="button"><span class="visually-hidden">Убрать</span></button>
+          </div>
+          <div class="form__label form__label--half-width form__label--flex-end">
+            <label class="form__title" for="children">Дети:</label>
+            <button class="form__button form__button--remove" type="button"><span class="visually-hidden">Добавить</span></button>
+            <input class="form__input" name="children" id="children" placeholder="0">
+            <button class="form__button form__button--add" type="button"><span class="visually-hidden">Убрать</span></button>
+          </div>
+          <button class="form__button button form__button--submit" type="submit">Найти</button>
         </form>
       </div>
       <p class="contacts__map">
-        <img class="contacts__map-image" src="img/map@1200.jpg" alt="Седона на карте">
+        <img class="contacts__map-image" src="img/map@1200.jpg" height="593" alt="Седона на карте">
       </p>
     </section>
   </main>
   <footer class="page-footer">
-    <p class="page-footer__heshtag">
-      #visitsedona
-    </p>
-    <div class="page-footer__social">
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="social-button" href="#">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="social-button" href="#">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="social-button" href="#">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
+    <div class="page-footer__wrapper">
+      <p class="page-footer__heshtag">
+        #visitsedona
+      </p>
+      <div class="page-footer__social">
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-footer__feedback">
+        Website by
+        <a class="page-footer__link" href="#">
+          <img class="page-footer__link-image" src="img/htmlacademy_logo.png" width="115" height="41" alt="htmlacademy.ru">
+          <span class="visually-hidden">htmlacademy</span>
+        </a>
+      </p>
     </div>
-    <p class="page-footer__feedback">
-      Website by
-      <a class="page-footer__link" href="#">
-        htmlacademy
-      </a>
-    </p>
   </footer>
 </body>
 </html>
