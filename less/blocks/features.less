@@ -38,17 +38,32 @@
 }
 
 .features__item--small {
+  box-sizing: border-box;
   width: 33.3%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   align-content: center;
+  justify-content: flex-end;
+  padding-top: 60px;
+}
+
+.features__item--gifts {
+  padding-top: 55px;
+}
+
+.features__item--with-picture {
+  min-height: 269px;
+}
+
+.features__item--without-picture {
+  padding-top: 48px;
 }
 
 .features__item--full-screen {
   width: 100%;
   display: flex;
-  margin-bottom: 55px;
+  margin-bottom: 0;
 }
 
 .features__item--reverse {
@@ -59,6 +74,7 @@
   padding-top: 48px;
   background-color: @blue;
   width: 33.3%;
+  min-width: 33.3%;
 }
 
 .features__description {
@@ -72,31 +88,23 @@
 .features__item .features__title {
   font-size: 21px;
   line-height: 21px;
-  width: 50%;
+  width: 130px;
   margin: 0 auto;
   margin-bottom: 23px;
+  text-align: center;
+}
+
+.features__item--food .features__title {
+  margin-bottom: 25px;
 }
 
 .features__item--full-screen .features__title {
   color: @white;
   font-size: 21px;
   line-height: 21px;
-  width: 38%;
+  width: 160px;
   margin: 0 auto;
   margin-bottom: 23px;
-}
-
-.features__item--full-screen .features__description {
-  color: @white;
-  font-family: @font-common;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 21px;
   text-align: center;
 }
 
@@ -107,7 +115,34 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  width: 75%;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.features__item--with-picture .features__description {
+  width: 77%;
+}
+
+.features__item--without-picture .features__description {
+  margin-bottom: 21px;
+  width: 77%;
+}
+
+.features__item--small-description .features__description {
+  width: 73%;
+}
+
+.features__item--full-screen .features__description {
+  color: @white;
+  font-family: @font-common;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 21px;
   text-align: center;
@@ -115,6 +150,10 @@
 
 .features__item--small .features__wrapper--image {
   margin-bottom: 30px;
+}
+
+.features__item--full-screen .features__wrapper--image {
+  height: 256px;
 }
 
 .features__wrapper--food {
