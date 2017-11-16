@@ -1,0 +1,68 @@
+.sorting {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 23px;
+  padding-bottom: 21px;
+  padding-left: 6%;
+  padding-right: 6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.sorting__caption {
+  min-width: 150px;
+  margin-right: 14px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sorting__title {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+
+.sorting__button {
+  width: auto;
+  .null-indents();
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  margin-right: 32px;
+}
+
+.sorting__button--arrow {
+  .null-indents();
+  width: 11px;
+  height: 10px;
+}
+
+.sorting__button--up {
+  margin-right: 11px;
+  background-image: url("../img/arrow-up.png");
+  background-repeat: no-repeat;
+}
+
+.sorting__button--down {
+  background-image: url("../img/arrow-down.png");
+  background-repeat: no-repeat;
+}
+
+.sorting__wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  min-width: 14px;
+}
