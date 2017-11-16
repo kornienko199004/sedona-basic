@@ -1,0 +1,252 @@
+.filters {
+  background-image: url("../img/hotels-background@1200.jpg");
+  padding-top: 27px;
+  padding-bottom: 11px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.filters__form {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.filters__filter {
+  .null-indents();
+  min-width: 200px;
+  width: 24%;
+  border: none;
+}
+
+.filters__filter--flex {
+  display: flex;
+}
+
+.filters__filter--flex:first-child {
+  width: 24.2%;
+  min-width: 236px;
+}
+
+.filters__filter--price {
+  box-sizing: border-box;
+  width: 58%;
+  min-width: 222px;
+  .null-indents();
+  margin-bottom: 0;
+}
+
+.filters__price {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  border: 2px solid @white;
+  border-radius: 2px;
+}
+
+.filters__wrapper--small {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 5.5%;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.filters__wrapper--small:first-child {
+  padding-left: 36px;
+  padding-right: 0;
+}
+
+.filters__wrapper--small:first-child::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 2px;
+  height: 22px;
+  border: 1px solid @white;
+}
+
+.filters__input--price {
+  .null-indents();
+  margin-left: -2px;
+  width: 45px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 21px;
+  color: @white;
+  text-transform: uppercase;
+
+  &::placeholder {
+    font-family: @font-common;
+    font-size: 14px;
+    line-height: 21px;
+    color: @white;
+    text-transform: uppercase;
+  }
+}
+
+.filters__span--price {
+  font-size: 14px;
+  line-height: 21px;
+  color: @white;
+  text-transform: uppercase;
+}
+
+.filters__wrapper--fieldset {
+  width: 52%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  box-sizing: border-box;
+}
+
+.filters__wrapper--button {
+  width: 60%;
+  min-width: 222px;
+  box-sizing: border-box;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.filters__legend {
+  .null-indents();
+}
+
+.filters__title {
+  .null-indents();
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  color: @white;
+  text-transform: uppercase;
+}
+
+.filters__title--checkbox {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.filters__title--price {
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.filters__button {
+  .null-indents();
+  box-sizing: border-box;
+  width: 138px;
+  padding: 6px 10px 6px 11px;
+  border: 2px solid @white;
+  border-radius: 2px;
+  background-color: transparent;
+  font-family: @font-common;
+  color: @white;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.filters__span--checkbox {
+  padding-left: 40px;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  color: @white;
+  text-transform: uppercase;
+}
+
+.filters__span--checkbox::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 4px;
+  width: 23px;
+  height: 23px;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 3px;
+}
+
+.filters__checkbox:checked ~ .filters__span--checkbox::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  width: 17px;
+  height: 8px;
+  border: 4px solid @white;
+  border-top: none;
+  border-right: none;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
+
+.filters__label {
+  .null-indents();
+  position: relative;
+}
+
+.filters__label--checkbox {
+  margin-bottom: 20px;
+}
+
+.filters__checkbox {
+  .null-indents();
+}
+
+.filters__checkbox,
+.filters__radio {
+  position: absolute;
+  opacity: 0;
+}
+
+.filters__range {
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 2px;
+  padding-top: 19px;
+}
+
+.filter__range-scale {
+  height: 2px;
+  background-color: rgb(215, 220, 222);
+}
+
+.filter__range-bar {
+  width: 80%;
+  height: 2px;
+  background-color: @white;
+}
+
+.filters__toggle {
+  position: absolute;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background: rgb(171, 171, 171);
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 1px 1px 0 rgb(207, 207, 207);
+  cursor: pointer;
+}
+
+.filters__toggle--min {
+  left: 0;
+}
+
+.filters__toggle--max {
+  right: 45px;
+}

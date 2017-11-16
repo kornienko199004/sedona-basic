@@ -1,0 +1,109 @@
+.hotel-card {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+.hotel-card__wrapper--image {
+  margin-right: 30px;
+  min-width: 135px;
+}
+
+.hotel-card__title {
+  .null-indents();
+  width: 100%;
+  margin-bottom: 2px;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.hotel-card__wrapper--text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  //border: 1px solid red;
+  padding-top: 15px;
+  padding-bottom: 22px;
+  width: 70%;
+}
+
+.hotel-card__wrapper--rating {
+  //border: 1px solid red;
+  width: 16%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: space-between;
+  align-content: space-between;
+  padding-bottom: 27px;
+  padding-top: 18px;
+}
+
+.hotel-card__stars {
+  .null-indents();
+  height: 17px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hotel-card__star {
+  line-height: 0;
+  margin-left: 6px;
+}
+
+.hotel-card__rating {
+  .null-indents();
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 111px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: rgb(242, 242, 242);
+  color: rgb(167, 167, 167);
+  text-align: center;
+}
+
+.hotel-card__wrapper--price {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.hotel-card__description {
+  display: inline-block;
+  font-size: 14px;
+  width: 110px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.hotel-card__button {
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-left: 17px;
+  padding-right: 17px;
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: @white;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hotel-card__button--details {
+  background-color: @blue;
+  margin-right: 6px;
+}
+
+.hotel-card__button--reserve {
+  background-color: rgb(118, 99, 87);
+}
